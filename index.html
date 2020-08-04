@@ -9,11 +9,22 @@
     />
     <meta name="author" content="Andrew Westenskow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINK TAG, OPTIMAL -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>HTML 1 Lecture</title>
   </head>
   <body>
+    <!-- STYLE TAG, NOT OPTIMAL -->
+    <style>
+      a {
+        font-size: 24px;
+        font-family: cursive;
+      }
+    </style>
     <header>
-      <h1>HTML/CSS 1 Lecture Code</h1>
+      <!-- INLINE STYLES, ALSO NOT OPTIMAL -->
+      <h1 style="color: blue; font-size: 18px;">HTML/CSS 1 Lecture Code</h1>
       <nav>
         <a href="https://google.com">Home</a>
         <a href="https://worldoftanks.com">About</a>
@@ -21,7 +32,7 @@
       </nav>
     </header>
     <div>
-      <p>Andrew's List of Tanks</p>
+      <p id="andrew-list-title">Andrew's List of Tanks</p>
       <ol>
         <li>Fish</li>
         <li>Propane</li>
@@ -37,14 +48,63 @@
       <input type="email" />
       <button>Click Me!!</button>
       <img
+        class="giant-image"
         alt="Toucan Sam"
         src="https://pbs.twimg.com/profile_images/3329187568/83a1f432893cc3a42806eb87b56c7045.jpeg"
       />
+      <article class="generic-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        cumque illum eligendi harum, eaque quo tempore corrupti et sequi itaque
+        fuga eius impedit praesentium. Perferendis tempore libero excepturi
+        facere nesciunt?
+      </article>
+      <p class="generic-text andrew-text">Andrew is kinda alright sometimes</p>
+      <img
+        class="giant-image dog-image"
+        src="https://wgntv.com/wp-content/uploads/sites/5/2018/07/31242138_10156299721567156_4458410270699552768_o-e1530653194662.jpg?w=1194&h=720&crop=1&resize=1280,720"
+        alt="Hank the dog"
+      />
+      <p class="lorem-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sequi
+        facere suscipit! In, voluptatibus? Officiis repellat, esse eos enim iste
+        dolorum at alias assumenda suscipit obcaecati quaerat molestiae iusto?
+        Consectetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Doloribus, recusandae totam veritatis minima maiores harum iste veniam!
+        Tenetur animi sequi natus assumenda illo nam facere minus eum, rerum, a
+        eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+        accusamus eius, quas dicta nesciunt dolores atque asperiores excepturi
+        laborum ad numquam iure error eos et, aperiam illum id voluptatibus ut?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ab esse
+        temporibus voluptatum maiores nesciunt accusamus, reprehenderit neque
+        exercitationem culpa dolorem laudantium saepe sequi eius veritatis quos
+        velit sed unde. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quam doloribus eligendi nobis dolores temporibus fugit amet, molestias
+        quo exercitationem sed. Sequi aut unde tempora soluta. Minima fugit
+        officia laboriosam temporibus! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nesciunt eaque rerum fugiat itaque quos, nostrum fuga
+        ab non laudantium tempora, sapiente, ullam fugit quis et at. Animi
+        asperiores aliquam quo. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quidem dolorum sint recusandae voluptates magnam quae
+        officiis quos, alias fugiat totam minima iste dolorem nostrum, natus
+        enim molestiae sunt blanditiis ducimus? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Consectetur est exercitationem a eum
+        repellat deleniti laborum doloribus quasi corporis cupiditate ut, veniam
+        eaque, iusto expedita nisi delectus dignissimos eveniet et! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Cumque provident aliquam
+        quidem laudantium minus placeat amet, dolor eos tenetur nam eum quo,
+        ratione, mollitia magni iure quaerat inventore? Temporibus, laborum?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
+        facilis distinctio facere labore? Hic minus, possimus laudantium qui
+        quisquam obcaecati voluptate doloremque exercitationem debitis id
+        quibusdam. Ad doloribus iste alias?
+      </p>
     </div>
-    <article>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cumque
-      illum eligendi harum, eaque quo tempore corrupti et sequi itaque fuga eius
-      impedit praesentium. Perferendis tempore libero excepturi facere nesciunt?
-    </article>
+
+    <div class="outer-box">
+      <div class="inner-box">
+        Lorem ipsum dolor sit
+      </div>
+      <div class="inner-box" id="second-box"></div>
+    </div>
   </body>
 </html>

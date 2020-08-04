@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: red;
+}
+
+.generic-text {
+  color: rebeccapurple;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.andrew-text {
+  font-size: 12px;
+}
+
+.giant-image {
+  width: 150px;
+}
+
+/* This is ignored because the class selector above is more specific */
+img {
+  width: 1000000px;
+}
+
+/* .giant-image:hover {
+  width: 500px;
+} */
+
+article {
+  display: inline-block;
+  width: 25vw;
+}
+
+.dog-image {
+  width: 250px;
+  float: left;
+}
+
+#andrew-list-title {
+  text-decoration: underline;
+}
+
+.outer-box {
+  width: 25vw;
+  height: 25vw;
+  border: 1px solid black;
+  margin: 25px;
+  background-color: aquamarine;
+  padding: 10px;
+}
+
+.inner-box {
+  height: 50%;
+  width: 50%;
+  border: 1px dotted green;
+  padding: 5px;
+}
+
+#second-box {
+  background-color: red;
+  float: right;
+}
+
+.lorem-text {
+  clear: right;
+}
